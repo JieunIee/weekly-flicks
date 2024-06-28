@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieCard = () => {
   return (
-    <div className="bg-body-gray text-white min-h-screen">
+    <div className="bg-body-gray text-white min-h-screen-with-header">
       <div className="text-3xl px-4 py-5">Box Office - Week 34</div>
       <div className="flex">
         <article className="bg-card-gray rounded overflow-hidden shadow-lg ml-4 w-454 h-512">

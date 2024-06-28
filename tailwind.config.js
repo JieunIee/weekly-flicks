@@ -7,6 +7,8 @@ module.exports = {
         "header-black": "#030303",
         "body-gray": "#161616",
         "card-gray": "#1E1E1E",
+        "form-gray": "#383838",
+        "button-red": "#DD1614",
       },
       width: {
         454: "454px",
@@ -16,5 +18,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".pt-header": {
+          paddingTop: "64px",
+        },
+        ".min-h-screen-with-header": {
+          minHeight: "calc(100vh - 64px)",
+        },
+      });
+    },
+  ],
 };
